@@ -1,5 +1,8 @@
 import React from 'react';
 import {SafeAreaView, View, Text, Image, StyleSheet, Dimensions} from 'react-native';
+import { Input, Button} from './components';
+
+
 
 const Login = () => {
   return (
@@ -24,7 +27,7 @@ const styles = StyleSheet.create({
         backgroundColor:'red',
         resizeMode:'contain',
         width:Dimensions.get('window').width,
-        height:800,
+        height: Dimensions.get('window').height * 0.40
         
     }
 
