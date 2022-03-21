@@ -1,13 +1,27 @@
 import React from "react";
-import { View, TextInput } from 'react-native';
+import { View, TextInput, StyleSheet, Platform } from 'react-native';
 
-const Input = ()=> {
+const Input = ({holder})=> {
     return(
-        <View style={{ backgroundColor: 'red'}}>
-            <TextInput />
+        <View style={ styles.container}>
+            <TextInput
+                placeholder={holder}
+            
+            />
             
         </View>
     )
 }
+
+const styles = StyleSheet.create({
+    container:{
+        backgroundColor:'#eceff1',
+        padding:Platform.OS == "ios" ? 15 :5,
+        margin:10,
+        borderRadius:10,
+        marginVertical:20
+    }
+})
+
 
 export { Input }
