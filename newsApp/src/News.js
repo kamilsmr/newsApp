@@ -1,21 +1,19 @@
-import React from 'react'; 
-import { SafeAreaView, View, Text } from 'react-native';
+import React from 'react';
+import {SafeAreaView, View, Text, ScrollView, Flatlist } from 'react-native';
+
+myArray = Array.from(Array(1500).keys());
 
 const News = () => {
-    return (
-        <SafeAreaView>
-            <View>
-                <Text>
-                    News
-                </Text>
-            </View>
-        </SafeAreaView>
-    )
-}
+  return (
+    <SafeAreaView style={{ flex:1}}>
+      {/* <ScrollView>
+        {
+          myArray.map(u => <Text style={{ fontSize: 30 }}>{u}</Text>)
+        } 
+      </ScrollView> */}
+      
+    </SafeAreaView>
+  );
+};
 
 export default News;
-
-
-
-
-
